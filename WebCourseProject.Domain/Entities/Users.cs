@@ -1,4 +1,4 @@
-﻿namespace Web_course_project.Data.Entities
+﻿namespace WebCourseProject.Domain.Entities
 {
     public class Users
     {

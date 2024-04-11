@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Web_course_project.Data.Entities;
+using WebCourseProject.Domain.Entities;
 
-namespace Web_course_project.Data
+namespace WebCourseProject.DataBaseConfiguration
 {
     public class AppDbContext : DbContext
     {
