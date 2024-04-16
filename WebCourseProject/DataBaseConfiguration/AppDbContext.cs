@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebCourseProject.DataBaseConfiguration.Configurations;
 using WebCourseProject.Domain.Entities;
 
 namespace WebCourseProject.DataBaseConfiguration
@@ -12,5 +13,16 @@ namespace WebCourseProject.DataBaseConfiguration
         public DbSet<Permissions> Permissions { get; set; }
         public DbSet<Grids> Grids { get; set; }
         public DbSet<Columns> Columns { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ColumnsConfiguration());
+            modelBuilder.ApplyConfiguration(new GridsConfiguration());
+            modelBuilder.ApplyConfiguration(new PermissionsConfiguration());
+            modelBuilder.ApplyConfiguration(new RolesConfiguration());
+            modelBuilder.ApplyConfiguration(new UsersConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
