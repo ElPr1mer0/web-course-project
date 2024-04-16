@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +9,15 @@ namespace WebCourseProject.Domain.Entities
 {
     public class Permissions
     {
-        public int userId { get; set; }
-        public int gridId { get; set; }
+        public int permId { get; set; }
         public bool create { get; set; }
         public bool read { get; set; }
         public bool write { get; set; }
         public bool update { get; set; }
+        public int userId { get; set; }
+        public Users? User { get; set; }
+        public int gridId { get; set; }
+        public Grids? Grid { get; set; }
 
     }
 }
