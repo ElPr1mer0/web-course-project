@@ -4,18 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCourseProject", "WebCourseProject\WebCourseProject.csproj", "{3C6FF6B0-B9E3-4F9A-B11D-981060D2E4AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59E98A98-C944-4321-9292-8CAAC9A2CCEF} = {59E98A98-C944-4321-9292-8CAAC9A2CCEF}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{09D564A8-73BB-4BC1-AED7-6A884A33DDBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{E985D9A1-8C3B-43D6-8603-979DBC6C8E6E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{D1E74771-DEAD-416C-8897-71B857A62A98}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{D1E74771-DEAD-416C-8897-71B857A62A98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCourseProject.Domain", "WebCourseProject.Domain\WebCourseProject.Domain.csproj", "{A10C0A06-FA96-4A70-969C-71B5ECF46A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCourseProject.Domain", "WebCourseProject.Domain\WebCourseProject.Domain.csproj", "{A10C0A06-FA96-4A70-969C-71B5ECF46A98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCourseProject.Repository", "WebCourseProject.Repository\WebCourseProject.Repository.csproj", "{B1FE93BD-A387-4A9E-A4E0-A2C8D2C2C1F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCourseProject.DAL", "WebCourseProject.DAL\WebCourseProject.DAL.csproj", "{B1FE93BD-A387-4A9E-A4E0-A2C8D2C2C1F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCourseProject.Service", "WebCourseProject.Service\WebCourseProject.Service.csproj", "{59E98A98-C944-4321-9292-8CAAC9A2CCEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCourseProject.Service", "WebCourseProject.Service\WebCourseProject.Service.csproj", "{59E98A98-C944-4321-9292-8CAAC9A2CCEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
